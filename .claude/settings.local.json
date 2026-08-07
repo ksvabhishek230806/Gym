@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__dc878af0-dc6e-4c8b-b21e-2f96397588e7__get_deployment",
+      "mcp__dc878af0-dc6e-4c8b-b21e-2f96397588e7__list_deployments",
+      "mcp__dc878af0-dc6e-4c8b-b21e-2f96397588e7__get_deployment_build_logs"
+    ]
+  }
+}

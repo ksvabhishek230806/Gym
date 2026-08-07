@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership Plans | StrongFist Gym Health & Fitness</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-black">
+
+<!-- ================= NAVBAR ================= -->
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="glass border-b border-white/5 bg-black/90">
+    <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-20">
+      <a href="home-preview.html" class="flex items-center gap-2">
+        <span class="display text-3xl tracking-wide">STRONG<span class="text-gradient-red">FIST</span></span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
+        <a href="home-preview.html" class="nav-link">Home</a>
+        <a href="about-preview.html" class="nav-link">About</a>
+        <a href="membership-preview.html" class="nav-link active">Membership</a>
+        <a href="services-preview.html" class="nav-link">Services</a>
+        <a href="trainers-preview.html" class="nav-link">Trainers</a>
+        <a href="gallery-preview.html" class="nav-link">Gallery</a>
+        <a href="contact-preview.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="tel:+919000051090" class="text-sm font-semibold text-white/80 hover:text-white">+91 90000 51090</a>
+        <a href="#single" class="btn-primary text-white text-sm font-bold uppercase px-6 py-3 rounded-full">Join Now</a>
+      </div>
+      <button id="menuBtn" class="lg:hidden text-white p-2">
+        <svg id="menuIconOpen" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="menuIconClose" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="lg:hidden hidden glass border-b border-white/5 bg-black/95 px-6 py-6 space-y-5 text-sm font-semibold uppercase tracking-wide">
+    <a href="home-preview.html" class="block">Home</a>
+    <a href="about-preview.html" class="block">About</a>
+    <a href="membership-preview.html" class="block">Membership</a>
+    <a href="services-preview.html" class="block">Services</a>
+    <a href="trainers-preview.html" class="block">Trainers</a>
+    <a href="gallery-preview.html" class="block">Gallery</a>
+    <a href="contact-preview.html" class="block">Contact</a>
+    <a href="tel:+919000051090" class="block text-white/70 normal-case">+91 90000 51090</a>
+    <a href="#single" class="btn-primary block text-center text-white font-bold uppercase px-6 py-3 rounded-full">Join Now</a>
+  </div>
+</header>
+
+<!-- ================= PAGE BANNER ================= -->
+<section class="relative h-[55vh] min-h-[380px] w-full overflow-hidden flex items-end">
+  <div class="absolute inset-0" style="background-image:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.6) 55%,rgba(0,0,0,.96)),url('assets/images/gym-cable-neon.jpg');background-size:cover;background-position:center;"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 pb-16 w-full">
+    <div class="flex items-center gap-3 mb-4 text-xs uppercase tracking-widest text-white/50">
+      <a href="home-preview.html" class="hover:text-white">Home</a><span>/</span><span class="text-red-500">Membership</span>
+    </div>
+    <h1 class="display text-6xl md:text-8xl leading-[0.9]">Simple, Honest <span class="text-gradient-red">Pricing</span></h1>
+    <p class="text-white/65 mt-5 max-w-xl">No hidden fees. Choose the plan that fits your goals — single, couple, or fully coached personal training.</p>
+    <div class="inline-flex items-center gap-2 mt-6 bg-white/5 border border-white/15 rounded-full px-4 py-2 text-xs uppercase tracking-widest text-white/70">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      Steam Bath Available on Select Plans
+    </div>
+  </div>
+</section>
+
+<!-- ================= SINGLE PERSON ================= -->
+<section id="single" class="py-24 md:py-32 bg-black">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <span class="text-red-500 font-bold uppercase tracking-[0.25em] text-xs">Single Membership</span>
+      <h2 class="display text-4xl md:text-6xl mt-4">For Individuals (M/F)</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal bg-[#111] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">1 Month</h3>
+        <div class="display text-5xl mb-1">₹3,000</div>
+        <p class="text-white/40 text-xs mb-6">one-time payment</p>
+        <ul class="space-y-3 text-sm text-white/70 mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Full gym floor access</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Free orientation session</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Locker access</li>
+        </ul>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full">Join Now</a>
+      </div>
+      <div class="reveal bg-[#111] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">3 Months</h3>
+        <div class="display text-5xl mb-1">₹8,000</div>
+        <p class="text-white/40 text-xs mb-6">one-time payment</p>
+        <ul class="space-y-3 text-sm text-white/70 mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Full gym floor access</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Free orientation session</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Locker access</li>
+        </ul>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full">Join Now</a>
+      </div>
+      <div class="reveal relative bg-gradient-to-b from-[#1a0405] to-[#111] border-2 border-red-600 rounded-2xl p-8 card-hover flex flex-col">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full">Most Popular</span>
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">6 Months</h3>
+        <div class="display text-5xl mb-1">₹14,000</div>
+        <p class="text-white/40 text-xs mb-6">one-time payment</p>
+        <ul class="space-y-3 text-sm text-white/70 mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Full gym floor access</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Free orientation session</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Locker + steam bath access</li>
+        </ul>
+        <a href="contact-preview.html" class="btn-primary text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full">Join Now</a>
+      </div>
+      <div class="reveal bg-[#111] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">Yearly</h3>
+        <div class="display text-5xl mb-1">₹20,000</div>
+        <p class="text-white/40 text-xs mb-6">one-time payment</p>
+        <ul class="space-y-3 text-sm text-white/70 mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Full gym floor access</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Free orientation session</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Locker + steam bath access</li>
+        </ul>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full">Join Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COUPLES ================= -->
+<section class="py-24 md:py-32 bg-[#0a0a0a] border-y border-white/10">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <span class="text-red-500 font-bold uppercase tracking-[0.25em] text-xs">Couples Membership</span>
+      <h2 class="display text-4xl md:text-6xl mt-4">Train Together, Save Together</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal bg-[#111] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">1 Month</h3>
+        <div class="display text-5xl mb-1">₹5,000</div>
+        <p class="text-white/40 text-xs mb-6">for two people</p>
+        <ul class="space-y-3 text-sm text-white/70 mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Full gym floor access for 2</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Free orientation session</li>
+        </ul>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full">Join Now</a>
+      </div>
+      <div class="reveal bg-[#111] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">3 Months</h3>
+        <div class="display text-5xl mb-1">₹15,000</div>
+        <p class="text-white/40 text-xs mb-6">for two people</p>
+        <ul class="space-y-3 text-sm text-white/70 mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Full gym floor access for 2</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Free orientation session</li>
+        </ul>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full">Join Now</a>
+      </div>
+      <div class="reveal relative bg-gradient-to-b from-[#1a0405] to-[#111] border-2 border-red-600 rounded-2xl p-8 card-hover flex flex-col">
+        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full">Most Popular</span>
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">6 Months</h3>
+        <div class="display text-5xl mb-1">₹24,000</div>
+        <p class="text-white/40 text-xs mb-6">for two people</p>
+        <ul class="space-y-3 text-sm text-white/70 mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Full gym floor access for 2</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Locker + steam bath access</li>
+        </ul>
+        <a href="contact-preview.html" class="btn-primary text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full">Join Now</a>
+      </div>
+      <div class="reveal bg-[#111] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">Yearly</h3>
+        <div class="display text-5xl mb-1">₹30,000</div>
+        <p class="text-white/40 text-xs mb-6">for two people</p>
+        <ul class="space-y-3 text-sm text-white/70 mb-8 flex-1">
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Full gym floor access for 2</li>
+          <li class="flex gap-2"><span class="text-red-500">✓</span> Locker + steam bath access</li>
+        </ul>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full">Join Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERSONAL TRAINING ================= -->
+<section class="py-24 md:py-32 bg-black">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+      <span class="text-red-500 font-bold uppercase tracking-[0.25em] text-xs">Personal Training (M/F)</span>
+      <h2 class="display text-4xl md:text-6xl mt-4">One-On-One Coaching</h2>
+      <p class="text-white/55 mt-4">Fully coached sessions with a dedicated trainer, on the schedule that works for you.</p>
+    </div>
+    <div class="flex justify-center gap-3 mb-12 reveal">
+      <button id="tabAlt" class="tab-btn active px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest border border-white/15">Alternate Days</button>
+      <button id="tabReg" class="tab-btn px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest border border-white/15">Regular Days</button>
+    </div>
+
+    <div id="panelAlt" class="pt-panel active sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal bg-[#0e0e0e] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">1 Month</h3>
+        <div class="display text-5xl mb-1">₹8,000</div>
+        <p class="text-white/40 text-xs mb-6">alternate days</p>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full mt-auto">Enquire Now</a>
+      </div>
+      <div class="reveal bg-[#0e0e0e] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">3 Months</h3>
+        <div class="display text-5xl mb-1">₹21,000</div>
+        <p class="text-white/40 text-xs mb-6">alternate days</p>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full mt-auto">Enquire Now</a>
+      </div>
+      <div class="reveal bg-[#0e0e0e] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">6 Months</h3>
+        <div class="display text-5xl mb-1">₹36,000</div>
+        <p class="text-white/40 text-xs mb-6">alternate days</p>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full mt-auto">Enquire Now</a>
+      </div>
+      <div class="reveal bg-[#0e0e0e] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">Yearly</h3>
+        <div class="display text-5xl mb-1">₹60,000</div>
+        <p class="text-white/40 text-xs mb-6">alternate days</p>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full mt-auto">Enquire Now</a>
+      </div>
+    </div>
+
+    <div id="panelReg" class="pt-panel sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal bg-[#0e0e0e] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">1 Month</h3>
+        <div class="display text-5xl mb-1">₹15,000</div>
+        <p class="text-white/40 text-xs mb-6">regular days</p>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full mt-auto">Enquire Now</a>
+      </div>
+      <div class="reveal bg-[#0e0e0e] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">3 Months</h3>
+        <div class="display text-5xl mb-1">₹40,000</div>
+        <p class="text-white/40 text-xs mb-6">regular days</p>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full mt-auto">Enquire Now</a>
+      </div>
+      <div class="reveal bg-[#0e0e0e] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">6 Months</h3>
+        <div class="display text-5xl mb-1">₹68,000</div>
+        <p class="text-white/40 text-xs mb-6">regular days</p>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full mt-auto">Enquire Now</a>
+      </div>
+      <div class="reveal bg-[#0e0e0e] border border-white/10 rounded-2xl p-8 card-hover flex flex-col">
+        <h3 class="text-white/60 uppercase text-xs font-bold tracking-widest mb-3">Yearly</h3>
+        <div class="display text-5xl mb-1">₹1,12,000</div>
+        <p class="text-white/40 text-xs mb-6">regular days</p>
+        <a href="contact-preview.html" class="btn-outline text-center text-white font-bold uppercase text-xs tracking-wide py-3 rounded-full mt-auto">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOTE / CTA ================= -->
+<section class="relative py-20 overflow-hidden border-t border-white/10">
+  <div class="absolute inset-0" style="background:linear-gradient(120deg,#1a0304 0%,#000 55%,#1a0304 100%);"></div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center reveal">
+    <h2 class="display text-3xl md:text-5xl leading-tight">Not Sure Which Plan Fits You?</h2>
+    <p class="text-white/70 mt-4 max-w-xl mx-auto">Walk in for a free consultation and floor tour — 6 AM to 10 PM, Monday to Saturday. Our team will help you pick the right plan for your goals and budget.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="contact-preview.html" class="btn-primary text-white font-bold uppercase tracking-wide px-9 py-4 rounded-full text-sm">Book Free Consultation</a>
+      <a href="tel:+919000051090" class="btn-outline text-white font-bold uppercase tracking-wide px-9 py-4 rounded-full text-sm">Call +91 90000 51090</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-black border-t border-white/10 pt-20 pb-8">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 grid md:grid-cols-4 gap-10">
+    <div>
+      <span class="display text-3xl">STRONG<span class="text-gradient-red">FIST</span></span>
+      <p class="text-white/50 text-sm mt-4 leading-relaxed">Strength training, fat loss programs, personalized coaching, and nutrition guidance designed for complete fitness transformation.</p>
+    </div>
+    <div>
+      <h4 class="font-bold text-sm uppercase tracking-widest mb-5">Quick Links</h4>
+      <ul class="space-y-3 text-sm text-white/55">
+        <li><a href="home-preview.html" class="hover:text-white">Home</a></li>
+        <li><a href="about-preview.html" class="hover:text-white">About Us</a></li>
+        <li><a href="membership-preview.html" class="hover:text-white">Membership</a></li>
+        <li><a href="gallery-preview.html" class="hover:text-white">Gallery</a></li>
+        <li><a href="contact-preview.html" class="hover:text-white">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold text-sm uppercase tracking-widest mb-5">Programs</h4>
+      <ul class="space-y-3 text-sm text-white/55">
+        <li>Strength Training</li>
+        <li>Personal Training</li>
+        <li>CrossFit Training</li>
+        <li>Body Recomposition</li>
+        <li>PCOD Fitness Support</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-bold text-sm uppercase tracking-widest mb-5">Contact</h4>
+      <ul class="space-y-3 text-sm text-white/55">
+        <li>Arka Surabhi, Lanco Hills Road, Khajaguda, Hyderabad</li>
+        <li>+91 90000 51090</li>
+        <li>strongfist000@gmail.com</li>
+        <li>Mon–Sat 6AM–10PM · Sun 6AM–12PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 md:px-10 mt-14 pt-8 border-t border-white/10 text-center text-white/40 text-xs">
+    © 2026 StrongFist GYM Health & Fitness. All Rights Reserved.
+  </div>
+</footer>
+
+<a href="https://wa.me/919000051090" target="_blank" class="float-btn fixed z-40 bottom-24 right-6 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-110 transition">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.45 1.33 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2zm5.8 14.2c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.13.09-1.82-.11-.42-.13-.96-.3-1.65-.6-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.56.16.28.7 1.16 1.51 1.88 1.04.93 1.91 1.22 2.19 1.36.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.28.37-.23.62-.14.26.09 1.63.77 1.91.91.28.14.47.21.53.33.07.12.07.7-.17 1.38z"/></svg>
+</a>
+<a href="tel:+919000051090" class="float-btn fixed z-40 bottom-6 right-6 w-14 h-14 rounded-full bg-red-600 flex items-center justify-center hover:scale-110 transition">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3l2 5-2.5 1.5a11 11 0 005 5L14 14l5 2v3a2 2 0 01-2 2h-1C8.163 21 3 15.837 3 9V5z"/></svg>
+</a>
+
+<script src="assets/js/common.js"></script>
+<script src="assets/js/membership.js"></script>
+</body>
+</html>
