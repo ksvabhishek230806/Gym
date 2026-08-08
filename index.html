@@ -476,11 +476,12 @@
       </div>
       <div class="reveal bg-[#111] border border-white/10 rounded-2xl p-8">
         <h3 class="font-bold text-xl mb-6">Send Us A Message</h3>
-        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thanks! This form is a frontend preview — connect it to a backend to receive messages.');">
-          <input type="text" placeholder="Your Name" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600" required>
-          <input type="tel" placeholder="Phone Number" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600" required>
-          <input type="email" placeholder="Email Address" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600">
-          <textarea placeholder="Tell us your fitness goal" rows="4" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600"></textarea>
+        <form class="space-y-4" data-lead-form data-source="index">
+          <input type="text" name="name" placeholder="Your Name" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600" required>
+          <input type="tel" name="phone" placeholder="Phone Number" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600" required>
+          <input type="email" name="email" placeholder="Email Address" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600">
+          <textarea name="message" placeholder="Tell us your fitness goal" rows="4" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600"></textarea>
+          <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off">
           <button type="submit" class="btn-primary w-full text-white font-bold uppercase tracking-wide py-4 rounded-full text-sm">Send Message</button>
         </form>
       </div>
@@ -545,5 +546,6 @@
 
 <script src="assets/js/common.js"></script>
 <script src="assets/js/home.js"></script>
+<script src="assets/js/lead-form.js"></script>
 </body>
 </html>

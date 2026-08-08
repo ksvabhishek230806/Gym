@@ -117,21 +117,22 @@
     <div class="reveal bg-[#111] border border-white/10 rounded-2xl p-8 md:p-10">
       <h3 class="font-bold text-2xl mb-2">Send Us A Message</h3>
       <p class="text-white/50 text-sm mb-6">Fill this out and our team will get back to you — usually within a few hours during gym timings.</p>
-      <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thanks! This form is a frontend preview — connect it to a backend to receive messages.');">
+      <form class="space-y-4" data-lead-form data-source="contact">
         <div class="grid sm:grid-cols-2 gap-4">
-          <input type="text" placeholder="Your Name" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600" required>
-          <input type="tel" placeholder="Phone Number" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600" required>
+          <input type="text" name="name" placeholder="Your Name" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600" required>
+          <input type="tel" name="phone" placeholder="Phone Number" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600" required>
         </div>
-        <input type="email" placeholder="Email Address" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600">
-        <select class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm text-white/70 focus:outline-none focus:border-red-600">
-          <option>I'm interested in...</option>
-          <option>Single Membership</option>
-          <option>Couples Membership</option>
-          <option>Personal Training</option>
-          <option>Nutrition Coaching</option>
-          <option>Just Visiting / Free Tour</option>
+        <input type="email" name="email" placeholder="Email Address" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600">
+        <select name="interest" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm text-white/70 focus:outline-none focus:border-red-600">
+          <option value="" selected>I'm interested in...</option>
+          <option value="Single Membership">Single Membership</option>
+          <option value="Couples Membership">Couples Membership</option>
+          <option value="Personal Training">Personal Training</option>
+          <option value="Nutrition Coaching">Nutrition Coaching</option>
+          <option value="Just Visiting / Free Tour">Just Visiting / Free Tour</option>
         </select>
-        <textarea placeholder="Tell us your fitness goal" rows="4" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600"></textarea>
+        <textarea name="message" placeholder="Tell us your fitness goal" rows="4" class="w-full bg-black border border-white/15 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-600"></textarea>
+        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off">
         <button type="submit" class="btn-primary w-full text-white font-bold uppercase tracking-wide py-4 rounded-full text-sm">Send Message</button>
       </form>
     </div>
@@ -205,5 +206,6 @@
 </a>
 
 <script src="assets/js/common.js"></script>
+<script src="assets/js/lead-form.js"></script>
 </body>
 </html>

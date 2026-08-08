@@ -1,0 +1,13 @@
+{
+  "name": "strongfist-website",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.6",
+    "@vercel/node": "^3.2.0",
+    "typescript": "^5.4.5"
+  }
+}

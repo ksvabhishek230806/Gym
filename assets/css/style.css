@@ -8,6 +8,7 @@ body{font-family:'Inter',sans-serif;background:#000;color:#fff;}
 .display{font-family:'Bebas Neue',sans-serif; letter-spacing:0.02em;}
 .text-gradient-red{background:linear-gradient(90deg,#ff4d4d,#e11d2a);-webkit-background-clip:text;background-clip:text;color:transparent;}
 .glass{background:rgba(17,17,17,0.55);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);}
+.hp-field{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease;}
 .reveal.show{opacity:1;transform:translateY(0);}
 .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease-in-out;}
