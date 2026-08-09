@@ -35,8 +35,14 @@ function isRateLimited(phone: string): boolean {
   return false;
 }
 
+// Accepts a plain 10-digit number, and strips the +91 country code / leading 0
+// only when there are extra digits to account for. A bare 10-digit mobile can
+// itself start with 91, so the prefixes must never be stripped on length alone.
 function normalizePhone(raw: string): string | null {
-  const digits = raw.replace(/\D/g, '').replace(/^91/, '').replace(/^0/, '');
+  let digits = raw.replace(/\D/g, '');
+  if (digits.length === 13 && digits.startsWith('910')) digits = digits.slice(3);
+  else if (digits.length === 12 && digits.startsWith('91')) digits = digits.slice(2);
+  else if (digits.length === 11 && digits.startsWith('0')) digits = digits.slice(1);
   return /^\d{10}$/.test(digits) ? digits : null;
 }
 
