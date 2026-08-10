@@ -1,5 +1,8 @@
 {
   "rewrites": [
     { "source": "/leads", "destination": "/api/leads-view" }
+  ],
+  "redirects": [
+    { "source": "/home-preview.html", "destination": "/", "permanent": true }
   ]
 }
